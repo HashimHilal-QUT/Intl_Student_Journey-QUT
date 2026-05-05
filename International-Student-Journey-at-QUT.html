@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0100)https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/International-Student-Journey-at-QUT.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image"
-        content="https://quttestdataai102.blob.core.windows.net/sitecontent/qs-profile-resized.jpg" />
+    <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/qs-profile-resized.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/qs-profile-resized.jpg">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/qs-profile-resized.jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/qs-profile-resized.jpg">
     <title>International Student Journey at QUT - Brisbane Arrival Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -116,7 +117,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 61, 109, 0.85), rgba(0, 86, 168, 0.9)), url('https://quttestdataai102.blob.core.windows.net/sitecontent/qs-profile-resized.jpg');
+            background: linear-gradient(rgba(0, 61, 109, 0.85), rgba(0, 86, 168, 0.9)), url('https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/qs-profile-resized.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -481,7 +482,66 @@
             vertical-align: middle;
         }
     </style>
-</head>
+<style>
+            nav a.active {
+                font-weight: 700;
+            }
+            nav a.active::after {
+                width: 100% !important;
+            }
+        </style><script type="text/javascript">;'use strict';(function(root,factory){if(typeof define==="function"&&define.amd){define(factory)}else if(typeof exports==="object"){module.exports=factory()}else{root.ResizeSensor=factory()}}(typeof window!=='undefined'?window:this,function(){if(typeof window==="undefined"){return null}
+var globalWindow=typeof window!='undefined'&&window.Math==Math?window:typeof self!='undefined'&&self.Math==Math?self:Function('return this')();var requestAnimationFrame=globalWindow.requestAnimationFrame||globalWindow.mozRequestAnimationFrame||globalWindow.webkitRequestAnimationFrame||function(fn){return globalWindow.setTimeout(fn,20)};function forEachElement(elements,callback){var elementsType=Object.prototype.toString.call(elements);var isCollectionTyped=('[object Array]'===elementsType||('[object NodeList]'===elementsType)||('[object HTMLCollection]'===elementsType)||('[object Object]'===elementsType)||('undefined'!==typeof jQuery&&elements instanceof jQuery)||('undefined'!==typeof Elements&&elements instanceof Elements));var i=0,j=elements.length;if(isCollectionTyped){for(;i<j;i++){callback(elements[i])}}else{callback(elements)}}
+function getElementSize(element){if(!element.getBoundingClientRect){return{width:element.offsetWidth,height:element.offsetHeight}}
+var rect=element.getBoundingClientRect();return{width:Math.round(rect.width),height:Math.round(rect.height)}}
+function setStyle(element,style){Object.keys(style).forEach(function(key){element.style[key]=style[key]})}
+var ResizeSensor=function(element,callback){function EventQueue(){var q=[];this.add=function(ev){q.push(ev)};var i,j;this.call=function(sizeInfo){for(i=0,j=q.length;i<j;i++){q[i].call(this,sizeInfo)}};this.remove=function(ev){var newQueue=[];for(i=0,j=q.length;i<j;i++){if(q[i]!==ev)newQueue.push(q[i])}
+q=newQueue};this.length=function(){return q.length}}
+function attachResizeEvent(element,resized){if(!element)return;if(element.resizedAttached){element.resizedAttached.add(resized);return}
+element.resizedAttached=new EventQueue();element.resizedAttached.add(resized);element.resizeSensor=document.createElement('div');element.resizeSensor.dir='ltr';element.resizeSensor.className='resize-sensor';var style={pointerEvents:'none',position:'absolute',left:'0px',top:'0px',right:'0px',bottom:'0px',overflow:'hidden',zIndex:'-1',visibility:'hidden',maxWidth:'100%'};var styleChild={position:'absolute',left:'0px',top:'0px',transition:'0s',};setStyle(element.resizeSensor,style);var expand=document.createElement('div');expand.className='resize-sensor-expand';setStyle(expand,style);var expandChild=document.createElement('div');setStyle(expandChild,styleChild);expand.appendChild(expandChild);var shrink=document.createElement('div');shrink.className='resize-sensor-shrink';setStyle(shrink,style);var shrinkChild=document.createElement('div');setStyle(shrinkChild,styleChild);setStyle(shrinkChild,{width:'200%',height:'200%'});shrink.appendChild(shrinkChild);element.resizeSensor.appendChild(expand);element.resizeSensor.appendChild(shrink);element.appendChild(element.resizeSensor);var computedStyle=window.getComputedStyle(element);var position=computedStyle?computedStyle.getPropertyValue('position'):null;if('absolute'!==position&&'relative'!==position&&'fixed'!==position){element.style.position='relative'}
+var dirty,rafId;var size=getElementSize(element);var lastWidth=0;var lastHeight=0;var initialHiddenCheck=!0;var lastAnimationFrame=0;var resetExpandShrink=function(){var width=element.offsetWidth;var height=element.offsetHeight;expandChild.style.width=(width+10)+'px';expandChild.style.height=(height+10)+'px';expand.scrollLeft=width+10;expand.scrollTop=height+10;shrink.scrollLeft=width+10;shrink.scrollTop=height+10};var reset=function(){if(initialHiddenCheck){var invisible=element.offsetWidth===0&&element.offsetHeight===0;if(invisible){if(!lastAnimationFrame){lastAnimationFrame=requestAnimationFrame(function(){lastAnimationFrame=0;reset()})}
+return}else{initialHiddenCheck=!1}}
+resetExpandShrink()};element.resizeSensor.resetSensor=reset;var onResized=function(){rafId=0;if(!dirty)return;lastWidth=size.width;lastHeight=size.height;if(element.resizedAttached){element.resizedAttached.call(size)}};var onScroll=function(){size=getElementSize(element);dirty=size.width!==lastWidth||size.height!==lastHeight;if(dirty&&!rafId){rafId=requestAnimationFrame(onResized)}
+reset()};var addEvent=function(el,name,cb){if(el.attachEvent){el.attachEvent('on'+name,cb)}else{el.addEventListener(name,cb)}};addEvent(expand,'scroll',onScroll);addEvent(shrink,'scroll',onScroll);requestAnimationFrame(reset)}
+forEachElement(element,function(elem){attachResizeEvent(elem,callback)});this.detach=function(ev){ResizeSensor.detach(element,ev)};this.reset=function(){element.resizeSensor.resetSensor()}};ResizeSensor.reset=function(element){forEachElement(element,function(elem){elem.resizeSensor.resetSensor()})};ResizeSensor.detach=function(element,ev){forEachElement(element,function(elem){if(!elem)return;if(elem.resizedAttached&&typeof ev==="function"){elem.resizedAttached.remove(ev);if(elem.resizedAttached.length())return}
+if(elem.resizeSensor){if(elem.contains(elem.resizeSensor)){elem.removeChild(elem.resizeSensor)}
+delete elem.resizeSensor;delete elem.resizedAttached}})};if(typeof MutationObserver!=="undefined"){var observer=new MutationObserver(function(mutations){for(var i in mutations){if(mutations.hasOwnProperty(i)){var items=mutations[i].addedNodes;for(var j=0;j<items.length;j++){if(items[j].resizeSensor){ResizeSensor.reset(items[j])}}}}});document.addEventListener("DOMContentLoaded",function(event){observer.observe(document.body,{childList:!0,subtree:!0,})})}
+return ResizeSensor}));'use strict';(function(root,factory){if(typeof define==="function"&&define.amd){define(['./ResizeSensor.js'],factory)}else if(typeof exports==="object"){module.exports=factory(require('./ResizeSensor.js'))}else{root.ElementQueries=factory(root.ResizeSensor);root.ElementQueries.listen()}}(typeof window!=='undefined'?window:this,function(ResizeSensor){var ElementQueries=function(){var cssStyleElement;var allQueries={};var idToSelectorMapping=[];function getEmSize(element){if(!element){element=document.documentElement}
+var fontSize=window.getComputedStyle(element,null).fontSize;return parseFloat(fontSize)||16}
+function getElementSize(element){if(!element.getBoundingClientRect){return{width:element.offsetWidth,height:element.offsetHeight}}
+var rect=element.getBoundingClientRect();return{width:Math.round(rect.width),height:Math.round(rect.height)}}
+function convertToPx(element,value){var numbers=value.split(/\d/);var units=numbers[numbers.length-1];value=parseFloat(value);switch(units){case "px":return value;case "em":return value*getEmSize(element);case "rem":return value*getEmSize();case "vw":return value*document.documentElement.clientWidth/100;case "vh":return value*document.documentElement.clientHeight/100;case "vmin":case "vmax":var vw=document.documentElement.clientWidth/100;var vh=document.documentElement.clientHeight/100;var chooser=Math[units==="vmin"?"min":"max"];return value*chooser(vw,vh);default:return value}}
+function SetupInformation(element,id){this.element=element;var key,option,elementSize,value,actualValue,attrValues,attrValue,attrName;var attributes=['min-width','min-height','max-width','max-height'];this.call=function(){elementSize=getElementSize(this.element);attrValues={};for(key in allQueries[id]){if(!allQueries[id].hasOwnProperty(key)){continue}
+option=allQueries[id][key];value=convertToPx(this.element,option.value);actualValue=option.property==='width'?elementSize.width:elementSize.height;attrName=option.mode+'-'+option.property;attrValue='';if(option.mode==='min'&&actualValue>=value){attrValue+=option.value}
+if(option.mode==='max'&&actualValue<=value){attrValue+=option.value}
+if(!attrValues[attrName])attrValues[attrName]='';if(attrValue&&-1===(' '+attrValues[attrName]+' ').indexOf(' '+attrValue+' ')){attrValues[attrName]+=' '+attrValue}}
+for(var k in attributes){if(!attributes.hasOwnProperty(k))continue;if(attrValues[attributes[k]]){this.element.setAttribute(attributes[k],attrValues[attributes[k]].substr(1))}else{this.element.removeAttribute(attributes[k])}}}}
+function setupElement(element,id){if(!element.elementQueriesSetupInformation){element.elementQueriesSetupInformation=new SetupInformation(element,id)}
+if(!element.elementQueriesSensor){element.elementQueriesSensor=new ResizeSensor(element,function(){element.elementQueriesSetupInformation.call()})}}
+function queueQuery(selector,mode,property,value){if(typeof(allQueries[selector])==='undefined'){allQueries[selector]=[];var id=idToSelectorMapping.length;cssStyleElement.innerHTML+='\n'+selector+' {animation: 0.1s element-queries;}';cssStyleElement.innerHTML+='\n'+selector+' > .resize-sensor {min-width: '+id+'px;}';idToSelectorMapping.push(selector)}
+allQueries[selector].push({mode:mode,property:property,value:value})}
+function getQuery(container){var query;if(document.querySelectorAll)query=(container)?container.querySelectorAll.bind(container):document.querySelectorAll.bind(document);if(!query&&'undefined'!==typeof $$)query=$$;if(!query&&'undefined'!==typeof jQuery)query=jQuery;if(!query){throw 'No document.querySelectorAll, jQuery or Mootools\'s $$ found.'}
+return query}
+function findElementQueriesElements(container){var query=getQuery(container);for(var selector in allQueries)if(allQueries.hasOwnProperty(selector)){var elements=query(selector,container);for(var i=0,j=elements.length;i<j;i++){setupElement(elements[i],selector)}}}
+function attachResponsiveImage(element){var children=[];var rules=[];var sources=[];var defaultImageId=0;var lastActiveImage=-1;var loadedImages=[];for(var i in element.children){if(!element.children.hasOwnProperty(i))continue;if(element.children[i].tagName&&element.children[i].tagName.toLowerCase()==='img'){children.push(element.children[i]);var minWidth=element.children[i].getAttribute('min-width')||element.children[i].getAttribute('data-min-width');var src=element.children[i].getAttribute('data-src')||element.children[i].getAttribute('url');sources.push(src);var rule={minWidth:minWidth};rules.push(rule);if(!minWidth){defaultImageId=children.length-1;element.children[i].style.display='block'}else{element.children[i].style.display='none'}}}
+lastActiveImage=defaultImageId;function check(){var imageToDisplay=!1,i;for(i in children){if(!children.hasOwnProperty(i))continue;if(rules[i].minWidth){if(element.offsetWidth>rules[i].minWidth){imageToDisplay=i}}}
+if(!imageToDisplay){imageToDisplay=defaultImageId}
+if(lastActiveImage!==imageToDisplay){if(!loadedImages[imageToDisplay]){var image=new Image();image.onload=function(){children[imageToDisplay].src=sources[imageToDisplay];children[lastActiveImage].style.display='none';children[imageToDisplay].style.display='block';loadedImages[imageToDisplay]=!0;lastActiveImage=imageToDisplay};image.src=sources[imageToDisplay]}else{children[lastActiveImage].style.display='none';children[imageToDisplay].style.display='block';lastActiveImage=imageToDisplay}}else{children[imageToDisplay].src=sources[imageToDisplay]}}
+element.resizeSensorInstance=new ResizeSensor(element,check);check()}
+function findResponsiveImages(){var query=getQuery();var elements=query('[data-responsive-image],[responsive-image]');for(var i=0,j=elements.length;i<j;i++){attachResponsiveImage(elements[i])}}
+var regex=/,?[\s\t]*([^,\n]*?)((?:\[[\s\t]*?(?:min|max)-(?:width|height)[\s\t]*?[~$\^]?=[\s\t]*?"[^"]*?"[\s\t]*?])+)([^,\n\s\{]*)/mgi;var attrRegex=/\[[\s\t]*?(min|max)-(width|height)[\s\t]*?[~$\^]?=[\s\t]*?"([^"]*?)"[\s\t]*?]/mgi;function extractQuery(css){var match,smatch,attrs,attrMatch;css=css.replace(/'/g,'"');while(null!==(match=regex.exec(css))){smatch=match[1]+match[3];attrs=match[2];while(null!==(attrMatch=attrRegex.exec(attrs))){queueQuery(smatch,attrMatch[1],attrMatch[2],attrMatch[3])}}}
+function readRules(rules){var selector='';if(!rules){return}
+if('string'===typeof rules){rules=rules.toLowerCase();if(-1!==rules.indexOf('min-width')||-1!==rules.indexOf('max-width')){extractQuery(rules)}}else{for(var i=0,j=rules.length;i<j;i++){if(1===rules[i].type){selector=rules[i].selectorText||rules[i].cssText;if(-1!==selector.indexOf('min-height')||-1!==selector.indexOf('max-height')){extractQuery(selector)}else if(-1!==selector.indexOf('min-width')||-1!==selector.indexOf('max-width')){extractQuery(selector)}}else if(4===rules[i].type){readRules(rules[i].cssRules||rules[i].rules)}else if(3===rules[i].type){if(rules[i].styleSheet.hasOwnProperty("cssRules")){readRules(rules[i].styleSheet.cssRules)}}}}}
+var defaultCssInjected=!1;this.init=function(){var animationStart='animationstart';if(typeof document.documentElement.style.webkitAnimationName!=='undefined'){animationStart='webkitAnimationStart'}else if(typeof document.documentElement.style.MozAnimationName!=='undefined'){animationStart='mozanimationstart'}else if(typeof document.documentElement.style.OAnimationName!=='undefined'){animationStart='oanimationstart'}
+document.body.addEventListener(animationStart,function(e){var element=e.target;var styles=element&&window.getComputedStyle(element,null);var animationName=styles&&styles.getPropertyValue('animation-name');var requiresSetup=animationName&&(-1!==animationName.indexOf('element-queries'));if(requiresSetup){element.elementQueriesSensor=new ResizeSensor(element,function(){if(element.elementQueriesSetupInformation){element.elementQueriesSetupInformation.call()}});var sensorStyles=window.getComputedStyle(element.resizeSensor,null);var id=sensorStyles.getPropertyValue('min-width');id=parseInt(id.replace('px',''));setupElement(e.target,idToSelectorMapping[id])}});if(!defaultCssInjected){cssStyleElement=document.createElement('style');cssStyleElement.type='text/css';cssStyleElement.innerHTML='[responsive-image] > img, [data-responsive-image] {overflow: hidden; padding: 0; } [responsive-image] > img, [data-responsive-image] > img {width: 100%;}';cssStyleElement.innerHTML+='\n@keyframes element-queries { 0% { visibility: inherit; } }';document.getElementsByTagName('head')[0].appendChild(cssStyleElement);defaultCssInjected=!0}
+for(var i=0,j=document.styleSheets.length;i<j;i++){try{if(document.styleSheets[i].href&&0===document.styleSheets[i].href.indexOf('file://')){console.warn("CssElementQueries: unable to parse local css files, "+document.styleSheets[i].href)}
+readRules(document.styleSheets[i].cssRules||document.styleSheets[i].rules||document.styleSheets[i].cssText)}catch(e){}}
+findResponsiveImages()};this.findElementQueriesElements=function(container){findElementQueriesElements(container)};this.update=function(){this.init()}};ElementQueries.update=function(){ElementQueries.instance.update()};ElementQueries.detach=function(element){if(element.elementQueriesSetupInformation){element.elementQueriesSensor.detach();delete element.elementQueriesSetupInformation;delete element.elementQueriesSensor}else if(element.resizeSensorInstance){element.resizeSensorInstance.detach();delete element.resizeSensorInstance}};ElementQueries.init=function(){if(!ElementQueries.instance){ElementQueries.instance=new ElementQueries()}
+ElementQueries.instance.init()};var domLoaded=function(callback){if(document.addEventListener){document.addEventListener('DOMContentLoaded',callback,!1)}
+else if(/KHTML|WebKit|iCab/i.test(navigator.userAgent)){var DOMLoadTimer=setInterval(function(){if(/loaded|complete/i.test(document.readyState)){callback();clearInterval(DOMLoadTimer)}},10)}
+else window.onload=callback};ElementQueries.findElementQueriesElements=function(container){ElementQueries.instance.findElementQueriesElements(container)};ElementQueries.listen=function(){domLoaded(ElementQueries.init)};return ElementQueries}));if(typeof elementQueries !== "undefined") {} else {var elementQueries = new ElementQueries();elementQueries.update();};;elementQueries.update();</script><style type="text/css">[responsive-image] > img, [data-responsive-image] {overflow: hidden; padding: 0; } [responsive-image] > img, [data-responsive-image] > img {width: 100%;}
+@keyframes element-queries { 0% { visibility: inherit; } }
+#ww_838e582e0098b .ww-box {animation: 0.1s element-queries;}
+#ww_838e582e0098b .ww-box > .resize-sensor {min-width: 0px;}</style></head>
 
 <body>
 
@@ -502,7 +562,7 @@
         <section id="ipc" class="section">
             <div class="section-header">
                 <div class="section-icon">
-                    <i class="fas fa-file-alt"></i>
+                    <i class="fa-solid fa-file-lines"></i>
                 </div>
                 <h2 class="section-title">Arrival at Brisbane International Airport</h2>
             </div>
@@ -510,8 +570,7 @@
                 <p><span class="highlight">Please Read Carefully</span> the <a href="https://www.youtube.com/watch?v=FI_pfYXLi6k" target="_blank">Incoming Passenger Card</a> . This is a
                     Government issued document (the same folks who issued you your Student Visa),  so the information provided in
                     IPC gets stored in your visa file. While the Torres Strait Islander people first settled in their
-                    islands around 4,000 years ago, your Incoming Passenger Card travel history is also retained upto <span
-                        class="highlight">4,000 years</span> too.
+                    islands around 4,000 years ago, your Incoming Passenger Card travel history is also retained upto <span class="highlight">4,000 years</span> too.
                     You will need to provide a Contact Person's Name, their Phone or Email and your place of stay in Australia i.e.
                     your address.
                     This will help authorities and police contact that Person in case of your Emergency. For example, if something
@@ -531,7 +590,7 @@
         <section class="section">
             <div class="section-header">
                 <div class="section-icon">
-                    <i class="fas fa-leaf"></i>
+                    <i class="fa-solid fa-leaf"></i>
                 </div>
                 <h2 class="section-title">Biosecurity <span class="qut-badge">Critical</span></h2>
             </div>
@@ -556,7 +615,7 @@
         <section class="section">
             <div class="section-header">
                 <div class="section-icon">
-                    <i class="fas fa-wifi"></i>
+                    <i class="fa-solid fa-wifi"></i>
                 </div>
                 <h2 class="section-title">Communications</h2>
             </div>
@@ -565,8 +624,7 @@
                     back home to your family that you have landed safely.</p>
 
                 <p>Good thing is that Brisbane Airport has free Wi-Fi. Alternatively, if you are really travel smart
-                    then you must have purchased international roaming eSIM like <a href="https://alosim.com"
-                        target="_blank">AloSIM</a> or <a href="https://www.airalo.com" target="_blank">Airalo</a>.</p>
+                    then you must have purchased international roaming eSIM like <a href="https://alosim.com/" target="_blank">AloSIM</a> or <a href="https://www.airalo.com/" target="_blank">Airalo</a>.</p>
 
                 <p>There are some mobile SIM provider stalls at the airport, but it depends on the arrival time of your
                     flight and whether they are open, or if it is a weekend. Opt for a pre-paid SIM if you are unsure
@@ -575,12 +633,12 @@
                     otherwise visa / VEVO check cannot be done by these systems).</p>
 
                 <div class="tip-box">
-                    <p> <a href="https://www.telstra.com.au" target="_blank">Telstra</a>, <a href="https://www.optus.com.au" target="_blank">Optus</a>, and <a href="https://www.vodafone.com.au" target="_blank">Vodafone</a> are reputed mobile providers in Australia, however, make sure your
+                    <p> <a href="https://www.telstra.com.au/" target="_blank">Telstra</a>, <a href="https://www.optus.com.au/" target="_blank">Optus</a>, and <a href="https://www.vodafone.com.au/" target="_blank">Vodafone</a> are reputed mobile providers in Australia, however, make sure your
                         Phone is 4G and 5G supported, and not 3G as that will not work in here.</p>
                 </div>
 
                 <div class="ps-note">
-                    <p><strong>P.S.</strong> For those who like vanity mobile numbers ,<a href="https://www.amaysim.com.au" target="_blank">Amaysim</a> is mobile SIM provider that sells custom mobile numbers at
+                    <p><strong>P.S.</strong> For those who like vanity mobile numbers ,<a href="https://www.amaysim.com.au/" target="_blank">Amaysim</a> is mobile SIM provider that sells custom mobile numbers at
                         reasonable price (it uses Optus Network). </p>
 
                 </div>
@@ -591,7 +649,7 @@
         <section id="transport" class="section">
             <div class="section-header">
                 <div class="section-icon">
-                    <i class="fas fa-taxi"></i>
+                    <i class="fa-solid fa-taxi"></i>
                 </div>
                 <h2 class="section-title">Transport from Airport</h2>
             </div>
@@ -606,7 +664,7 @@
                 <ul>
                     <li><span class="highlight">QUT Airport Reception (FREE !):</span> QUT provides a free 24-hour airport reception and transfer service for new international students.
                     If you're bringing family members or relatives, additional charges will apply. These include, a fee for each extra person and a separate fee for each piece of their luggage.
-                    For more details contact <a href="mailto:qut@belairlimos.com.au">qut@belairlimos.com.au</a> or visit <a href="https://www.qut.edu.au/study/student-life/support/airport-reception" target="_blank">QUT Airport Reception</a>
+                    For more details contact <a href="/cdn-cgi/l/email-protection#6e1f1b1a2e0c0b020f071c020703011d400d0103400f1b"><span class="__cf_email__" data-cfemail="85f4f0f1c5e7e0e9e4ecf7e9ece8eaf6abe6eae8abe4f0">[email&#160;protected]</span></a> or visit <a href="https://www.qut.edu.au/study/student-life/support/airport-reception" target="_blank">QUT Airport Reception</a>
                     </li>
                     <li><span class="highlight">Maxi Taxi (13Cabs App):</span> For those who have so much luggage that
                         won't fit in an SUV. Maxi Taxi are customized Toyota Hiace vans modded to carry very large amounts of baggage.</li>
@@ -623,7 +681,7 @@
                         the direction of travel of the bus , so basically the first stop of 590 and not the second one,
                         otherwise you will be in for your first ride misadventure. Then from Toombul Interchange take
                         the Bus to your Destination or cross the road to catch the Train. Total trip cost $1.00! </li>
-					<p> Remeber one day when you get old with grey hair and leaving Australia you will come here to buy branded items for your relatives back home from <a href="https://www.brisbane.dfo.com.au/" target="_blank" > DFO </a>(Direct Factory Outlet)</p>	
+					<p> Remeber one day when you get old with grey hair and leaving Australia you will come here to buy branded items for your relatives back home from <a href="https://www.brisbane.dfo.com.au/" target="_blank"> DFO </a>(Direct Factory Outlet)</p>	
                 </ul>
 
                 <div class="ps-note">
@@ -661,7 +719,7 @@
         <section id="address" class="section">
             <div class="section-header">
                 <div class="section-icon">
-                    <i class="fas fa-home"></i>
+                    <i class="fa-solid fa-house"></i>
                 </div>
                 <h2 class="section-title">Australian Address <span class="qut-badge">Essential</span></h2>
             </div>
@@ -698,7 +756,7 @@
         <section id="banking" class="section">
             <div class="section-header">
                 <div class="section-icon">
-                    <i class="fas fa-bank"></i>
+                    <i class="fa-solid fa-building-columns"></i>
                 </div>
                 <h2 class="section-title">Banking in Australia <span class="qut-badge">First Week</span></h2>
             </div>
@@ -728,7 +786,7 @@
 					</p>
 
 					<p><strong>Credit Card: FORGET IT!</strong> Australian banks do not issue credit cards until you
-                        have a JOB and submit 3-6 months of income statements & payslips. Only then you will be eligible
+                        have a JOB and submit 3-6 months of income statements &amp; payslips. Only then you will be eligible
                         for a Credit Card and will get a Credit Score.</p>
 					
                 </div>
@@ -755,7 +813,7 @@
         <section id="accommodation" class="section">
             <div class="section-header">
                 <div class="section-icon">
-                    <i class="fas fa-bed"></i>
+                    <i class="fa-solid fa-bed"></i>
                 </div>
                 <h2 class="section-title">Student Accommodation</h2>
             </div>
@@ -772,8 +830,7 @@
                     <li>Those who are really tight on budget can search for a granny flat (shared space) in cheapest
                         possible locality called Woodridge</li>
                 </ul>
-                <p>Have a look at this video about Apartment Hunting Experience <a
-                        href="https://youtu.be/hPJcKMJKZSM?si=SyAYvddcR9Birbxs" target="_blank">here</a>.</p>
+                <p>Have a look at this video about Apartment Hunting Experience <a href="https://youtu.be/hPJcKMJKZSM?si=SyAYvddcR9Birbxs" target="_blank">here</a>.</p>
 
                 <p>There are some student backpacker places in the city, but I don't believe they allow long term
                     residence. Only God and the person living there knows about the hygiene conditions there.</p>
@@ -783,7 +840,7 @@
         <section id="culture-shock" class="section">
             <div class="section-header">
                 <div class="section-icon">
-                    <i class="fas fa-globe-asia"></i>
+                    <i class="fa-solid fa-earth-asia"></i>
                 </div>
                 <h2 class="section-title">Culture Shock in Australia <span class="qut-badge">Reality Check</span></h2>
             </div>
@@ -798,9 +855,7 @@
                         you'll need a <span class="highlight">voltage converter</span>, not just a plug adapter!</p>
 
                     <div style="text-align: center; margin: 1.5rem 0;">
-                        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/AustraliaSocket.jpg"
-                            alt="Australian Power Socket Type I"
-                            style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 100%; height: auto;">
+                        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/AustraliaSocket.jpg" alt="Australian Power Socket Type I" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 100%; height: auto;">
                         <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Australian Type I Power Socket
                             (3-pin)</p>
                     </div>
@@ -813,7 +868,7 @@
                 </div>
 
                 <div class="sub-section">
-                    <h3 class="sub-title">Cigarettes & Tobacco - Prepare Your Wallet!</h3>
+                    <h3 class="sub-title">Cigarettes &amp; Tobacco - Prepare Your Wallet!</h3>
                     <p>Australia has some of the <span class="highlight">highest tobacco prices in the world</span>. A
                         pack of 20 cigarettes costs around <span class="highlight">$40-$60 AUD</span> (yes, you read
                         that right!).</p>
@@ -867,12 +922,10 @@
                         <p><strong>Budget Tip:</strong> Cook at home, use student discounts wherever possible, and take
                             advantage of free activities like beaches, parks, and hiking trails. Brisbane has plenty of
                             free entertainment!
-                            Shop at <a href="https://www.kmart.com.au" target="_blank">KMart</a> and <a
-                                href="https://www.bigw.com.au/" target="_blank">BigW</a> for budget friendly Clothing,
+                            Shop at <a href="https://www.kmart.com.au/" target="_blank">KMart</a> and <a href="https://www.bigw.com.au/" target="_blank">BigW</a> for budget friendly Clothing,
                             Makeup, Household Items, Toiletries, Kitchen Utensils, Novels, Office Stationery,
                             Electronics. Use Everyday Rewards and Flybuys Apps to get discount points. If you are into
-                            American style big bulk buying, then become <a href="https://www.costco.com.au/"
-                                target="_blank"> Costco</a> member.</p>
+                            American style big bulk buying, then become <a href="https://www.costco.com.au/" target="_blank"> Costco</a> member.</p>
 								<p><a href="https://www.7eleven.com.au/" target="_blank">7-Eleven</a> has the cheapest coffee in the city, they have precision engineering built-in to their Coffee machines and it fills your cup to the brim with zero spillage (talk about nanometer accuracy) ! </p>
 								<p>McDonald's has the cheapest Ice Cream cone 50 cents! , <a href="https://www.woolworths.com.au/" target="_blank">Woolworths</a> (a.k.a Wooleys) and <a href="https://www.coles.com.au/" target="_blank">Coles</a> will not sell single ice cream cone except bulk, but for that you need to visit Woolworths Metro or Coles Local , EzyMart etc. There is a Gelato craze and you will see huge queues around Ice-Cream Parlors.</p>
 					</div>
@@ -906,7 +959,7 @@
         <section id="qut-tips" class="section">
             <div class="section-header">
                 <div class="section-icon">
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fa-solid fa-graduation-cap"></i>
                 </div>
                 <h2 class="section-title">QUT Student Success Guide <span class="qut-badge">Must Read</span></h2>
             </div>
@@ -979,14 +1032,13 @@
                      <div class="scroll-box">
                         <p><strong>Pro Tip: </strong>Install Canvas on your mobile device (phone/tablet) so you can brush up whist on your commute to Uni.
                         
-                    </div>    
+                    </p></div>    
 
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-title">Academic Success Tips at QUT</h3>
                     <ul>
-                        <li>While lectures are recorded and available for viewing anytime on Canvas in Echo360, <span
-                                class="highlight">attend lectures in-person</span>. Your parents paid for you to study
+                        <li>While lectures are recorded and available for viewing anytime on Canvas in Echo360, <span class="highlight">attend lectures in-person</span>. Your parents paid for you to study
                             in Uni, so better attend face-to-face.</li>
                         <li><span class="highlight">Must attend all tutorials in-person</span> - <span style="color: red;">the attendance in tutorials is recorded and submitted to government.</span></li>
 
@@ -1006,15 +1058,11 @@
                         International students, therefore, should contact your education or training provider prior to coming to Australia to let them know you will create a USI upon arrival.
                         After arrival; You will need your non-Australian passport with Australian Visa as 'Evidence of Identity' , Address in Brisbane and your Australian Mobile Number. You can use pesonal email address (not QUT email ID) to create a USI Code </p>
                         <div style="width: 100%; text-align: center;">
-                        <img 
-                        src="https://quttestdataai102.blob.core.windows.net/sitecontent/USI-RGB.webp" 
-                        alt="USI"
-                        style="width: 80%; height: auto; object-fit: contain;"
-                        >
+                        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/USI.jpg" alt="USI" style="width: 25%; height: 25%; object-fit: contain;">
                         </div>
                         <p> Here is the link to know more about USI for International Students <a href="https://www.usi.gov.au/students/international-students-and-students-studying-overseas" target="_blank">USI.gov.au</a></p>
-                        <p style="text-align: center;"><span class="highlight">You may not be able to graduate or receive a statement of attainment if you leave Australia and have not created a USI.</p></span> 
-                        <p style="text-align: center;"><span style="color: blue;">However, once you have created your USI login to QUT Portal, update your Profile with the USI code !</p></span>
+                        <p style="text-align: center;"><span class="highlight">You may not be able to graduate or receive a statement of attainment if you leave Australia and have not created a USI.</span></p> 
+                        <p style="text-align: center;"><span style="color: blue;">However, once you have created your USI login to QUT Portal, update your Profile with the USI code !</span></p>
 						<p style="text-align: center;"><span style="color: red;">Your Australian visa cannot be used to create a USI or update your personal details once you have left Australia for good.</span></p>
 						
                     </div>    
@@ -1039,25 +1087,15 @@
                             bus for KG, but you can take QUT Shuttle bus between GP and KG campuses at zero cost. </p>
 
                         <p style="text-align: center;">
-                            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                            </p><div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
   
-                                <iframe 
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28320.475132979685!2d152.99911033524043!3d-27.467410306504608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9159fd378a54f3%3A0x235e0d07ce126bbe!2sQUT%20Kelvin%20Grove%20Library!5e0!3m2!1sen!2sau!4v1770861537484!5m2!1sen!2sau"
-                                    style="width:45%; height:400px; border:0;"
-                                    allowfullscreen=""
-                                    loading="lazy">
-                                </iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.7!2d153.1189!3d-27.3842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9158c5a8a7c4fb%3A0x502a35af3de7b70!2sBrisbane+Airport!5e0!3m2!1sen!2sau!4v1" style="width:45%; height:400px; border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-                                <iframe 
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7079.500900688758!2d153.02588827623075!3d-27.477027417019976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a1045b8072b%3A0x5f78c750e1afee26!2sQUT%20Gardens%20Point%20Library!5e0!3m2!1sen!2sau!4v1770861609459!5m2!1sen!2sau"
-                                    style="width:45%; height:400px; border:0;"
-                                    allowfullscreen=""
-                                    loading="lazy">
-                                </iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.2!2d153.0285!3d-27.4776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045fb5c1bb%3A0x52f4f82c5b1a40a7!2sQueensland+University+of+Technology!5e0!3m2!1sen!2sau!4v1" style="width:45%; height:400px; border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                                 </div>
 
-                        </p>
+                        <p></p>
 
 
                         </div>
@@ -1073,7 +1111,7 @@
 					</div>
                         <div class="ps-note">
                         <p><strong>P.S.</strong> 
-                                <p> There are EzyMart shops in GP and KG Campus that have machine dispensed coffee at really affordable prices as compared to any other coffee shop on campus, everything else there is at skyrocket prices though. </p> 
+                                </p><p> There are EzyMart shops in GP and KG Campus that have machine dispensed coffee at really affordable prices as compared to any other coffee shop on campus, everything else there is at skyrocket prices though. </p> 
 								<p> Both campuses have Food Courts , whilst GP is in the heart of the city (so you can go to several restaurants, cafes, malls, even Cinema)  , KG has a small 'Village' that has many cafes, stores and restaurants.</p> 
                     			<p> Brisbane is home to many <a href="https://www.queensland.com/au/en/places-to-see/destinations/brisbane/brisbane-s-best-markets-to-discover-this-weekend" target="_blank">Weekend Flea Markets</a>, you can get good bargain prices, GP students can go to Botanic Gardens market or Brisbane Square Library Markets and KG students can go to The Village. </p>   
                         </div>
@@ -1115,48 +1153,48 @@
 
 <div class="image-grid">
     <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/Sunny-Brisbane.jpg" alt="Sunny weather">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/Sunny_Weather.jpg" alt="Sunny weather">
         <div class="image-caption">Sunny Weather</div>
     </div>
 
     <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/Whitsundays.jpg" alt="Beaches">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/White_Sandy_Beaches.jpg" alt="Beaches">
         <div class="image-caption">White Sandy Beaches</div>
     </div>
 
     <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/best-of-all-lookout-10.jpg" alt="Best Lookout Point">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/Best_Lookout_Point.jpg" alt="Best Lookout Point">
         <div class="image-caption">Best Lookout Point</div>
     </div>
 
     <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/Waterfalls.jpg" alt="Waterfalls">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/Waterfalls.jpg" alt="Waterfalls">
         <div class="image-caption">Waterfalls</div>
     </div>
 
     <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/NewYear.jpg" alt="New Year Fireworks">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/New_Year_Fireworks.jpg" alt="New Year Fireworks">
         <div class="image-caption">New Year Fireworks</div>
     </div>
 
     <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/NoosaHeads.webp" alt="Noosa Heads Sunset">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/Noosa_Heads_Sunset.jpg" alt="Noosa Heads Sunset">
         <div class="image-caption">Noosa Heads Sunset</div>
     </div>
     <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/RiverfireF18.jpg" alt="F-18 Story Bridge">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/F-18_Story_Bridge.jpg" alt="F-18 Story Bridge">
         <div class="image-caption">F-18 Story Bridge</div>
     </div>
     <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/Pacific_Airshow_2021.webp" alt="Pacific Airshow">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/Pacific_Airshow.jpg" alt="Pacific Airshow">
         <div class="image-caption">Pacific Airshow</div>
     </div>
         <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/GoldCoastV8.jpg" alt="V8 Supercar Race">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/V8_Supercar_Race.jpg" alt="V8 Supercar Race">
         <div class="image-caption">V8 Supercar Race</div>
     </div>
         <div class="image-item">
-        <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/WhaleWatching.avif" alt="Whale Watching">
+        <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/Whale_Watching.jpg" alt="Whale Watching">
         <div class="image-caption">Whale Watching</div>
     </div>    
 </div>
@@ -1197,17 +1235,683 @@
                             
                             <p>Below is this week's Weather Forecast:</p>
                             <div class="weather-center">
-                            <div id="ww_838e582e0098b" v="1.3" loc="id"
-                                a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl2957"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"7"}'>
+                            <div id="ww_838e582e0098b" v="1.3" loc="id" a="{&quot;t&quot;:&quot;responsive&quot;,&quot;lang&quot;:&quot;en&quot;,&quot;sl_lpl&quot;:1,&quot;ids&quot;:[&quot;wl2957&quot;],&quot;font&quot;:&quot;Arial&quot;,&quot;sl_ics&quot;:&quot;one_a&quot;,&quot;sl_sot&quot;:&quot;celsius&quot;,&quot;cl_bkg&quot;:&quot;image&quot;,&quot;cl_font&quot;:&quot;#FFFFFF&quot;,&quot;cl_cloud&quot;:&quot;#FFFFFF&quot;,&quot;cl_persp&quot;:&quot;#81D4FA&quot;,&quot;cl_sun&quot;:&quot;#FFC107&quot;,&quot;cl_moon&quot;:&quot;#FFC107&quot;,&quot;cl_thund&quot;:&quot;#FF5722&quot;,&quot;sl_tof&quot;:&quot;7&quot;}"> <style>#ww_838e582e0098b{line-height:normal}#ww_838e582e0098b div,#ww_838e582e0098b span,#ww_838e582e0098b svg{vertical-align:baseline;padding:0;margin:0;position:static;border:none}#ww_838e582e0098b div{display:block}#ww_838e582e0098b span{display:inline}.cssDef{vertical-align:baseline;padding:0;margin:0}#ww_838e582e0098b .ww_source{position:absolute;padding:5px;display:inline-block;text-align:right;top:0;right:0;width:auto!important}#ww_838e582e0098b .ww_source svg{height:10px;width:10px;opacity:.35}#ww_838e582e0098b .ww_infoicon{fill:#fff}#ww_838e582e0098b .ww_info{display:none;font-size:10px;padding:7px;opacity:.75;color:black;text-align:left;line-height:15px;margin-top:-17px;margin-right:15px}#ww_838e582e0098b .ww_info a{color:black;text-decoration:underline;display:inline}#ww_838e582e0098b .ww_source:hover .ww_info{display:block;background-color:#fff}#ww_838e582e0098b{vertical-align:baseline;padding:0;margin:0;width:100%;position:relative;line-height:normal}#ww_838e582e0098b .ww-box{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;font-size:13px;text-align:center;min-width:100px}#ww_838e582e0098b .ww-box svg{height:35px;width:35px}#ww_838e582e0098b .current-name{font-size:15px;font-weight:700}#ww_838e582e0098b .current-conditions svg{height:50px;width:50px}#ww_838e582e0098b .ww_col1,#ww_838e582e0098b .ww_col2{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}#ww_838e582e0098b .ww_col1{-webkit-box-flex:10;-webkit-flex-grow:10;-moz-box-flex:10;-ms-flex-positive:10;flex-grow:10;padding:5px}#ww_838e582e0098b .ww_col2{-webkit-box-flex:30;-webkit-flex-grow:30;-moz-box-flex:30;-ms-flex-positive:30;flex-grow:30}#ww_838e582e0098b .ww_col2 .ww_child:nth-child(odd){background:rgba(0,0,0,.04)}#ww_838e582e0098b .day-forecast .date{margin-bottom:5px}#ww_838e582e0098b .current-temp{font-size:35px;display:inline-block;line-height:35px}#ww_838e582e0098b .current-temp span{position:relative;top:1px}#ww_838e582e0098b .ww_child{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#ww_838e582e0098b .current-name,#ww_838e582e0098b .current-temp{-webkit-box-flex:1;-webkit-flex-grow:1;-moz-box-flex:1;-ms-flex-positive:1;flex-grow:1}#ww_838e582e0098b .current-conditions{padding:0 5px}#ww_838e582e0098b .day-forecast{-webkit-box-flex:1;-webkit-flex-grow:1;-moz-box-flex:1;-ms-flex-positive:1;flex-grow:1;padding:5px 5px 5px 0}#ww_838e582e0098b .day-forecast .data{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;text-align:right}#ww_838e582e0098b .svg-wrapper{display:inline-block;line-height:0}#ww_838e582e0098b .day-forecast svg{margin-right:7px}#ww_838e582e0098b .day-forecast .temp{font-size:14px}#ww_838e582e0098b .ww-box[max-width~="405px"] .day-forecast .temp{font-size:12px}#ww_838e582e0098b .day-forecast .night{opacity:.7}#ww_838e582e0098b .svg-wrapper.narrow{display:none}#ww_838e582e0098b .ww-box[max-width~="1279px"] .day-forecast .data{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#ww_838e582e0098b .ww-box[max-width~="1279px"] .day-forecast .data svg{margin-right:0}#ww_838e582e0098b .ww-box[max-width~="768px"]{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#ww_838e582e0098b .ww-box[max-width~="768px"] .ww_col1{padding:15px 5px}#ww_838e582e0098b .ww-box[max-width~="329px"] .ww_col1{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}#ww_838e582e0098b .ww-box[max-width~="329px"] .ww_col2{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#ww_838e582e0098b .ww-box[max-width~="329px"] .current-name{width:100%;margin-bottom:15px}#ww_838e582e0098b .ww-box[max-width~="329px"] .current-conditions{-webkit-box-flex:1;-webkit-flex-grow:1;-moz-box-flex:1;-ms-flex-positive:1;flex-grow:1}#ww_838e582e0098b .ww-box[max-width~="329px"] .day-forecast{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-moz-box-orient:horizontal;-moz-box-direction:normal;-ms-flex-direction:row;flex-direction:row}#ww_838e582e0098b .ww-box[max-width~="329px"] .day-forecast .date{width:25%;margin-bottom:0}#ww_838e582e0098b .ww-box[max-width~="329px"] .day-forecast .data{width:75%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-moz-box-orient:horizontal;-moz-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:end;-webkit-justify-content:flex-end;-moz-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#ww_838e582e0098b .ww-box[max-width~="329px"] .day-forecast .data .temp{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:70%;-webkit-box-pack:end;-webkit-justify-content:flex-end;-moz-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}#ww_838e582e0098b .ww-box[max-width~="329px"] .day-forecast .data .temp .day{padding-right:5px}#ww_838e582e0098b .ww-box[max-width~="329px"] .day-forecast .data .temp .night{width:33%;padding-right:10px}#ww_838e582e0098b .ww-box[max-width~="329px"] .svg-wrapper.narrow{display:inline-block}#ww_838e582e0098b .ww-box[max-width~="329px"] .svg-wrapper.wide{display:none}#ww_838e582e0098b .ww-box[max-width~="200px"] .current-name{margin-bottom:0}#ww_838e582e0098b .ww-box[max-width~="200px"] .current-conditions{width:100%;margin-top:15px}#ww_838e582e0098b .ww-box[max-width~="200px"] .current-temp{width:100%;margin-top:15px}#ww_838e582e0098b .ww-box[max-width~="180px"] .current-temp{font-size:30px;line-height:30px}#ww_838e582e0098b .ww-box[max-width~="180px"] .current-temp span{top:2px}#ww_838e582e0098b .ww-box[max-width~="180px"] .day-forecast .data .temp{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-webkit-align-items:flex-end;-moz-box-align:end;-ms-flex-align:end;align-items:flex-end;width:50%}#ww_838e582e0098b .ww-box[max-width~="180px"] .day-forecast .data .temp .night{width:auto;padding-right:5px}#ww_838e582e0098b .ww-box[max-width~="128px"] .current-temp{font-size:20px;line-height:20px}#ww_838e582e0098b .ww-box[max-width~="128px"] .day-forecast{padding:5px 5px 5px 5px;display:block}#ww_838e582e0098b .ww-box[max-width~="128px"] .day-forecast .date{text-align:center;margin-bottom:5px;width:auto}#ww_838e582e0098b .ww-box[max-width~="128px"] .day-forecast .data{-webkit-box-pack:end;-webkit-justify-content:flex-end;-moz-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;width:auto}#ww_838e582e0098b .ww-box[max-width~="128px"] .day-forecast .temp{-webkit-box-flex:1;-webkit-flex-grow:1;-moz-box-flex:1;-ms-flex-positive:1;flex-grow:1} #ww_838e582e0098b{background-color:grey;color:#FFFFFF} #ww_838e582e0098b .ww-box{font-family:Arial,Helvetica,sans-serif}#ww_838e582e0098b .wi_cloud,#ww_838e582e0098b .wi_fog{fill:#404041;stroke:#404041}#ww_838e582e0098b .wi_rain,#ww_838e582e0098b .wi_snow{fill:#309bff;stroke:#309bff}#ww_838e582e0098b .wi_thunder{fill:#ff5d2b}#ww_838e582e0098b .wi_sun,#ww_838e582e0098b .wi_sun-semi{fill:#fcc756}#ww_838e582e0098b .wi_sunshine{fill:#fbb040;stroke:#fbb040}#ww_838e582e0098b .wi_moon-semi,#ww_838e582e0098b .wi_moon{fill:#fcc756}#ww_838e582e0098b .wi_stars{fill:#ffcf47}#ww_838e582e0098b .ww-animation-hr-move{-webkit-animation-name:ww-animation-hr-move;-moz-animation-name:ww-animation-hr-move;-o-animation-name:ww-animation-hr-move;animation-name:ww-animation-hr-move;-webkit-animation-duration:7s;-moz-animation-duration:7s;-o-animation-duration:7s;animation-duration:7s;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-o-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes ww-animation-hr-move{0%{-webkit-transform:translate(-7px,0) rotate(0.02deg);transform:translate(-7px,0) rotate(0.02deg)}50%{-webkit-transform:translate(7px,0) rotate(0.02deg);transform:translate(7px,0) rotate(0.02deg)}100%{-webkit-transform:translate(-7px,0) rotate(0.02deg);transform:translate(-7px,0) rotate(0.02deg)}}@-moz-keyframes ww-animation-hr-move{0%{-moz-transform:translate(-7px,0) rotate(0.02deg);transform:translate(-7px,0) rotate(0.02deg)}50%{-moz-transform:translate(7px,0) rotate(0.02deg);transform:translate(7px,0) rotate(0.02deg)}100%{-moz-transform:translate(-7px,0) rotate(0.02deg);transform:translate(-7px,0) rotate(0.02deg)}}@-o-keyframes ww-animation-hr-move{0%{-o-transform:translate(-7px,0) rotate(0.02deg);transform:translate(-7px,0) rotate(0.02deg)}50%{-o-transform:translate(7px,0) rotate(0.02deg);transform:translate(7px,0) rotate(0.02deg)}100%{-o-transform:translate(-7px,0) rotate(0.02deg);transform:translate(-7px,0) rotate(0.02deg)}}@keyframes ww-animation-hr-move{0%{-webkit-transform:translate(-7px,0) rotate(0.02deg);-moz-transform:translate(-7px,0) rotate(0.02deg);-o-transform:translate(-7px,0) rotate(0.02deg);transform:translate(-7px,0) rotate(0.02deg)}50%{-webkit-transform:translate(7px,0) rotate(0.02deg);-moz-transform:translate(7px,0) rotate(0.02deg);-o-transform:translate(7px,0) rotate(0.02deg);transform:translate(7px,0) rotate(0.02deg)}100%{-webkit-transform:translate(-7px,0) rotate(0.02deg);-moz-transform:translate(-7px,0) rotate(0.02deg);-o-transform:translate(-7px,0) rotate(0.02deg);transform:translate(-7px,0) rotate(0.02deg)}}#ww_838e582e0098b .wi_cloud_gradient,#ww_838e582e0098b .wi_cloud_gradient-2{opacity:.35;isolation:isolate}#ww_838e582e0098b .wi_cloud_gradient{fill:url(#wi_cloud_gradient)}#ww_838e582e0098b .wi_cloud_gradient-2{fill:url(#wi_cloud_gradient-2)}#ww_838e582e0098b .ww-animation-sun{-webkit-animation-name:ww-animation-sun;-moz-animation-name:ww-animation-sun;-o-animation-name:ww-animation-sun;animation-name:ww-animation-sun;-webkit-animation-duration:14s;-moz-animation-duration:14s;-o-animation-duration:14s;animation-duration:14s;-webkit-animation-timing-function:ease-in-out;-moz-animation-timing-function:ease-in-out;-o-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes ww-animation-sun{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-moz-keyframes ww-animation-sun{0%{-moz-transform:rotate(0deg);transform:rotate(0deg)}100%{-moz-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes ww-animation-sun{0%{-o-transform:rotate(0deg);transform:rotate(0deg)}100%{-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes ww-animation-sun{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}#ww_838e582e0098b .ww-animation-sunshine{-webkit-animation-name:ww-animation-sunshine;-moz-animation-name:ww-animation-sunshine;-o-animation-name:ww-animation-sunshine;animation-name:ww-animation-sunshine;-webkit-animation-duration:3s;-moz-animation-duration:3s;-o-animation-duration:3s;animation-duration:3s;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-o-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes ww-animation-sunshine{0%{stroke-dasharray:1px 10px;stroke-dashoffset:0}50%{stroke-dasharray:6px 20px;stroke-dashoffset:-1px}100%{stroke-dasharray:1px 10px;stroke-dashoffset:0}}@-moz-keyframes ww-animation-sunshine{0%{stroke-dasharray:1px 10px;stroke-dashoffset:0}50%{stroke-dasharray:6px 20px;stroke-dashoffset:-1px}100%{stroke-dasharray:1px 10px;stroke-dashoffset:0}}@-o-keyframes ww-animation-sunshine{0%{stroke-dasharray:1px 10px;stroke-dashoffset:0}50%{stroke-dasharray:6px 20px;stroke-dashoffset:-1px}100%{stroke-dasharray:1px 10px;stroke-dashoffset:0}}@keyframes ww-animation-sunshine{0%{stroke-dasharray:1px 10px;stroke-dashoffset:0}50%{stroke-dasharray:6px 20px;stroke-dashoffset:-1px}100%{stroke-dasharray:1px 10px;stroke-dashoffset:0}}#ww_838e582e0098b .ww-animation-moon{-webkit-animation-name:ww-animation-moon;-moz-animation-name:ww-animation-moon;-o-animation-name:ww-animation-moon;animation-name:ww-animation-moon;-webkit-animation-duration:11s;-moz-animation-duration:11s;-o-animation-duration:11s;animation-duration:11s;-webkit-animation-timing-function:ease-in-out;-moz-animation-timing-function:ease-in-out;-o-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes ww-animation-moon{0%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}50%{-webkit-transform:rotate(10deg);transform:rotate(10deg)}100%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}}@-moz-keyframes ww-animation-moon{0%{-moz-transform:rotate(-10deg);transform:rotate(-10deg)}50%{-moz-transform:rotate(10deg);transform:rotate(10deg)}100%{-moz-transform:rotate(-10deg);transform:rotate(-10deg)}}@-o-keyframes ww-animation-moon{0%{-o-transform:rotate(-10deg);transform:rotate(-10deg)}50%{-o-transform:rotate(10deg);transform:rotate(10deg)}100%{-o-transform:rotate(-10deg);transform:rotate(-10deg)}}@keyframes ww-animation-moon{0%{-webkit-transform:rotate(-10deg);-moz-transform:rotate(-10deg);-o-transform:rotate(-10deg);transform:rotate(-10deg)}50%{-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg)}100%{-webkit-transform:rotate(-10deg);-moz-transform:rotate(-10deg);-o-transform:rotate(-10deg);transform:rotate(-10deg)}}#ww_838e582e0098b .ww-animation-thunder{-webkit-animation-name:ww-animation-thunder;-moz-animation-name:ww-animation-thunder;-o-animation-name:ww-animation-thunder;animation-name:ww-animation-thunder;-webkit-animation-duration:7s;-moz-animation-duration:7s;-o-animation-duration:7s;animation-duration:7s;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-o-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes ww-animation-thunder{0%{-webkit-transform:scale(.75);transform:scale(.75)}50%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(.75);transform:scale(.75)}}@-moz-keyframes ww-animation-thunder{0%{-moz-transform:scale(.75);transform:scale(.75)}50%{-moz-transform:scale(1);transform:scale(1)}100%{-moz-transform:scale(.75);transform:scale(.75)}}@-o-keyframes ww-animation-thunder{0%{-o-transform:scale(.75);transform:scale(.75)}50%{-o-transform:scale(1);transform:scale(1)}100%{-o-transform:scale(.75);transform:scale(.75)}}@keyframes ww-animation-thunder{0%{-webkit-transform:scale(.75);-moz-transform:scale(.75);-o-transform:scale(.75);transform:scale(.75)}50%{-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(.75);-moz-transform:scale(.75);-o-transform:scale(.75);transform:scale(.75)}}#ww_838e582e0098b .ww-animation-rain{-webkit-animation-name:ww-animation-rain;-moz-animation-name:ww-animation-rain;-o-animation-name:ww-animation-rain;animation-name:ww-animation-rain;-webkit-animation-duration:8s;-moz-animation-duration:8s;-o-animation-duration:8s;animation-duration:8s;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-o-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite}#ww_838e582e0098b .ww-animation-rain-2{-webkit-animation-delay:0.5s;-moz-animation-delay:0.5s;-o-animation-delay:0.5s;animation-delay:0.5s}@-webkit-keyframes ww-animation-rain{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}@-moz-keyframes ww-animation-rain{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}@-o-keyframes ww-animation-rain{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}@keyframes ww-animation-rain{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}#ww_838e582e0098b .ww-animation-snow{-webkit-animation-name:ww-animation-snow;-moz-animation-name:ww-animation-snow;-o-animation-name:ww-animation-snow;animation-name:ww-animation-snow;-webkit-animation-duration:2s;-moz-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-o-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite}#ww_838e582e0098b .ww-animation-snow-1{-webkit-animation-delay:1.2s;-moz-animation-delay:1.2s;-o-animation-delay:1.2s;animation-delay:1.2s;-webkit-animation-name:ww-animation-snow-1;-moz-animation-name:ww-animation-snow-1;-o-animation-name:ww-animation-snow-1;animation-name:ww-animation-snow-1}@-webkit-keyframes ww-animation-snow{0%{-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}33.33%{-webkit-transform:translateX(-2px) translateY(7px);transform:translateX(-2px) translateY(7px)}66.66%{-webkit-transform:translateX(3px) translateY(14px);transform:translateX(3px) translateY(14px);opacity:1}100%{-webkit-transform:translateX(-2px) translateY(21px);transform:translateX(-2px) translateY(21px);opacity:0}}@-moz-keyframes ww-animation-snow{0%{-moz-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}33.33%{-moz-transform:translateX(-2px) translateY(7px);transform:translateX(-2px) translateY(7px)}66.66%{-moz-transform:translateX(3px) translateY(14px);transform:translateX(3px) translateY(14px);opacity:1}100%{-moz-transform:translateX(-2px) translateY(21px);transform:translateX(-2px) translateY(21px);opacity:0}}@-o-keyframes ww-animation-snow{0%{-o-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}33.33%{-o-transform:translateX(-2px) translateY(7px);transform:translateX(-2px) translateY(7px)}66.66%{-o-transform:translateX(3px) translateY(14px);transform:translateX(3px) translateY(14px);opacity:1}100%{-o-transform:translateX(-2px) translateY(21px);transform:translateX(-2px) translateY(21px);opacity:0}}@keyframes ww-animation-snow{0%{-webkit-transform:translateX(0) translateY(0);-moz-transform:translateX(0) translateY(0);-o-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}33.33%{-webkit-transform:translateX(-2px) translateY(7px);-moz-transform:translateX(-2px) translateY(7px);-o-transform:translateX(-2px) translateY(7px);transform:translateX(-2px) translateY(7px)}66.66%{-webkit-transform:translateX(3px) translateY(14px);-moz-transform:translateX(3px) translateY(14px);-o-transform:translateX(3px) translateY(14px);transform:translateX(3px) translateY(14px);opacity:1}100%{-webkit-transform:translateX(-2px) translateY(21px);-moz-transform:translateX(-2px) translateY(21px);-o-transform:translateX(-2px) translateY(21px);transform:translateX(-2px) translateY(21px);opacity:0}}@-webkit-keyframes ww-animation-snow-1{0%{-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}33.33%{-webkit-transform:translateX(2px) translateY(7px);transform:translateX(2px) translateY(7px)}66.66%{-webkit-transform:translateX(-3px) translateY(14px);transform:translateX(-3px) translateY(14px);opacity:1}100%{-webkit-transform:translateX(2px) translateY(21px);transform:translateX(2px) translateY(21px);opacity:0}}@-moz-keyframes ww-animation-snow-1{0%{-moz-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}33.33%{-moz-transform:translateX(2px) translateY(7px);transform:translateX(2px) translateY(7px)}66.66%{-moz-transform:translateX(-3px) translateY(14px);transform:translateX(-3px) translateY(14px);opacity:1}100%{-moz-transform:translateX(2px) translateY(21px);transform:translateX(2px) translateY(21px);opacity:0}}@-o-keyframes ww-animation-snow-1{0%{-o-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}33.33%{-o-transform:translateX(2px) translateY(7px);transform:translateX(2px) translateY(7px)}66.66%{-o-transform:translateX(-3px) translateY(14px);transform:translateX(-3px) translateY(14px);opacity:1}100%{-o-transform:translateX(2px) translateY(21px);transform:translateX(2px) translateY(21px);opacity:0}}@keyframes ww-animation-snow-1{0%{-webkit-transform:translateX(0) translateY(0);-moz-transform:translateX(0) translateY(0);-o-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}33.33%{-webkit-transform:translateX(2px) translateY(7px);-moz-transform:translateX(2px) translateY(7px);-o-transform:translateX(2px) translateY(7px);transform:translateX(2px) translateY(7px)}66.66%{-webkit-transform:translateX(-3px) translateY(14px);-moz-transform:translateX(-3px) translateY(14px);-o-transform:translateX(-3px) translateY(14px);transform:translateX(-3px) translateY(14px);opacity:1}100%{-webkit-transform:translateX(2px) translateY(21px);-moz-transform:translateX(2px) translateY(21px);-o-transform:translateX(2px) translateY(21px);transform:translateX(2px) translateY(21px);opacity:0}} #ww_838e582e0098b .ww-box{background-size:cover} #ww_838e582e0098b .ww-box{background-color:#1A237E;background-image:url(https://app3.weatherwidget.org/skin/img/bg/clear_night.jpg)}#ww_838e582e0098b .ww_col2 .ww_child:nth-child(odd){background:#FFFFFF00}#ww_838e582e0098b .wi_cloud,#ww_838e582e0098b .wi_fog {fill:#FFFFFF;stroke:#FFFFFF;}#ww_838e582e0098b .wi_rain,#ww_838e582e0098b .wi_snow {fill:#81D4FA;stroke:#81D4FA;}#ww_838e582e0098b .wi_sun,#ww_838e582e0098b .wi_sun-semi,#ww_838e582e0098b .wi_sunshine {fill:#FFC107;stroke:#FFC107;}#ww_838e582e0098b .wi_moon-semi,#ww_838e582e0098b .wi_moon,#ww_838e582e0098b .wi_stars {fill:#FFC107;}</style> <div class="ww-box" max-width="1279px" style="position: relative;">  <div class="ww_col1">  <div class="ww_child current-name"> <div class="location"> Brisbane </div> </div>  <div class="ww_child current-conditions"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(0,5)"><g transform="translate(73,31) rotate(-25) scale(0.77)">
+  <g class="ww-animation-moon">
+    <path class="wi_moon" d="M9.34-3.701a17.99,17.99,0,0,1,7.81-15.0437A24.7547,24.7547,0,0,0,2.3754-23.5861C-11.0867-23.5861-22-13.0012-22,.0562S-11.0867,23.6985,2.3754,23.6985A24.5665,24.5665,0,0,0,22.3486,13.6011C14.9189,11.9147,9.34,4.8113,9.34-3.701Z"></path>
+  </g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g><circle class="wi_stars" cx="10.387" cy="31.0012" r="3.0669"></circle><circle class="wi_stars" cx="19.3189" cy="33.1022" r="2.101"></circle><circle class="wi_stars" cx="23.7578" cy="23.1285" r="1.9041"></circle></g></svg> </div>  <div class="ww_child current-temp"> <span> 18°C </span> </div>  </div>  <div class="ww_col2"> <div style="display:none">+19</div><div style="display:none">+18</div><div style="display:none">+18</div><div style="display:none">+17</div><div style="display:none">+16</div><div style="display:none">+16</div><div style="display:none">+15</div><div style="display:none">+16</div><div style="display:none">+19</div><div style="display:none">+21</div><div style="display:none">+24</div><div style="display:none">+26</div><div style="display:none">+26</div><div style="display:none">+26</div><div style="display:none">+26</div><div style="display:none">+25</div><div style="display:none">+24</div><div style="display:none">+23</div><div style="display:none">+22</div><div style="display:none">+21</div><div style="display:none">+20</div><div style="display:none">+20</div><div style="display:none">+20</div><div style="display:none">+19</div> <div class="ww_child day-forecast"> <div class="date"> Tue </div> <div class="data"> <div class="svg-wrapper wide"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></svg> </div> <div class="svg-wrapper narrow"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(0,9)"><g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></g></svg> </div> <div class="temp"> <div class="day"> 26°C </div> <div class="night"> 15°C </div> </div> </div> </div> <div style="display:none">+18</div><div style="display:none">+17</div><div style="display:none">+17</div><div style="display:none">+16</div><div style="display:none">+16</div><div style="display:none">+16</div><div style="display:none">+16</div><div style="display:none">+17</div><div style="display:none">+20</div><div style="display:none">+23</div><div style="display:none">+25</div><div style="display:none">+26</div><div style="display:none">+27</div><div style="display:none">+28</div><div style="display:none">+28</div><div style="display:none">+26</div><div style="display:none">+25</div><div style="display:none">+24</div><div style="display:none">+23</div><div style="display:none">+22</div><div style="display:none">+21</div><div style="display:none">+20</div><div style="display:none">+20</div><div style="display:none">+19</div> <div class="ww_child day-forecast"> <div class="date"> Wed </div> <div class="data"> <div class="svg-wrapper wide"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></svg> </div> <div class="svg-wrapper narrow"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(0,9)"><g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></g></svg> </div> <div class="temp"> <div class="day"> 28°C </div> <div class="night"> 16°C </div> </div> </div> </div> <div style="display:none">+19</div><div style="display:none">+18</div><div style="display:none">+17</div><div style="display:none">+16</div><div style="display:none">+16</div><div style="display:none">+16</div><div style="display:none">+16</div><div style="display:none">+17</div><div style="display:none">+21</div><div style="display:none">+24</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+24</div><div style="display:none">+23</div><div style="display:none">+23</div><div style="display:none">+22</div><div style="display:none">+21</div><div style="display:none">+20</div><div style="display:none">+20</div> <div class="ww_child day-forecast"> <div class="date"> Thu </div> <div class="data"> <div class="svg-wrapper wide"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></svg> </div> <div class="svg-wrapper narrow"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(0,9)"><g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></g></svg> </div> <div class="temp"> <div class="day"> 25°C </div> <div class="night"> 16°C </div> </div> </div> </div> <div style="display:none">+19</div><div style="display:none">+19</div><div style="display:none">+18</div><div style="display:none">+18</div><div style="display:none">+18</div><div style="display:none">+19</div><div style="display:none">+20</div><div style="display:none">+21</div><div style="display:none">+22</div><div style="display:none">+23</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+26</div><div style="display:none">+26</div><div style="display:none">+27</div><div style="display:none">+27</div><div style="display:none">+28</div><div style="display:none">+27</div><div style="display:none">+26</div><div style="display:none">+25</div><div style="display:none">+24</div><div style="display:none">+22</div><div style="display:none">+21</div><div style="display:none">+21</div> <div class="ww_child day-forecast"> <div class="date"> Fri </div> <div class="data"> <div class="svg-wrapper wide"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></svg> </div> <div class="svg-wrapper narrow"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(0,9)"><g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></g></svg> </div> <div class="temp"> <div class="day"> 28°C </div> <div class="night"> 18°C </div> </div> </div> </div> <div style="display:none">+20</div><div style="display:none">+20</div><div style="display:none">+19</div><div style="display:none">+19</div><div style="display:none">+18</div><div style="display:none">+19</div><div style="display:none">+20</div><div style="display:none">+21</div><div style="display:none">+22</div><div style="display:none">+23</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+23</div><div style="display:none">+22</div><div style="display:none">+21</div><div style="display:none">+20</div><div style="display:none">+19</div><div style="display:none">+18</div><div style="display:none">+18</div> <div class="ww_child day-forecast"> <div class="date"> Sat </div> <div class="data"> <div class="svg-wrapper wide"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(50,50)">
+	<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+	<g class="ww-animation-sun">
+		<g transform="rotate(0)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(45)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(90)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(135)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(180)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(225)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(270)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(315)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+	</g>
+</g>
+</svg> </div> <div class="svg-wrapper narrow"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(50,50)">
+	<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+	<g class="ww-animation-sun">
+		<g transform="rotate(0)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(45)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(90)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(135)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(180)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(225)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(270)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(315)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+	</g>
+</g>
+</svg> </div> <div class="temp"> <div class="day"> 24°C </div> <div class="night"> 18°C </div> </div> </div> </div> <div style="display:none">+17</div><div style="display:none">+17</div><div style="display:none">+16</div><div style="display:none">+16</div><div style="display:none">+15</div><div style="display:none">+16</div><div style="display:none">+17</div><div style="display:none">+19</div><div style="display:none">+20</div><div style="display:none">+21</div><div style="display:none">+22</div><div style="display:none">+23</div><div style="display:none">+23</div><div style="display:none">+23</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+23</div><div style="display:none">+22</div><div style="display:none">+21</div><div style="display:none">+20</div><div style="display:none">+20</div><div style="display:none">+19</div><div style="display:none">+18</div> <div class="ww_child day-forecast"> <div class="date"> Sun </div> <div class="data"> <div class="svg-wrapper wide"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(50,50)">
+	<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+	<g class="ww-animation-sun">
+		<g transform="rotate(0)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(45)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(90)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(135)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(180)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(225)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(270)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(315)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+	</g>
+</g>
+</svg> </div> <div class="svg-wrapper narrow"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(50,50)">
+	<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+	<g class="ww-animation-sun">
+		<g transform="rotate(0)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(45)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(90)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(135)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(180)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(225)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+			<g transform="rotate(270)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+		<g transform="rotate(315)">
+			<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+		</g>
+	</g>
+</g>
+</svg> </div> <div class="temp"> <div class="day"> 24°C </div> <div class="night"> 15°C </div> </div> </div> </div> <div style="display:none">+18</div><div style="display:none">+17</div><div style="display:none">+17</div><div style="display:none">+16</div><div style="display:none">+16</div><div style="display:none">+17</div><div style="display:none">+18</div><div style="display:none">+20</div><div style="display:none">+21</div><div style="display:none">+22</div><div style="display:none">+23</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+24</div><div style="display:none">+23</div><div style="display:none">+22</div><div style="display:none">+21</div><div style="display:none">+21</div><div style="display:none">+20</div><div style="display:none">+19</div> <div class="ww_child day-forecast"> <div class="date"> Mon </div> <div class="data"> <div class="svg-wrapper wide"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></svg> </div> <div class="svg-wrapper narrow"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><lineargradient id="wi_thunder" x1="50.5297" y1="61.3953" x2="50.5297" y2="95.2093" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f58e58"></stop><stop offset="1" stop-color="#f16a54"></stop></lineargradient>
+
+<lineargradient id="wi_moon" x1="49.0818" y1="26.7472" x2="49.0818" y2="74.0318" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_moon-semi" x1="74.4389" y1="10.1892" x2="74.4389" y2="45.2739" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="0.1824" stop-color="#fec74c"></stop><stop offset="0.578" stop-color="#fcbc54"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun" x1="49.9873" y1="33.1058" x2="49.9873" y2="66.8666" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf47"></stop><stop offset="1" stop-color="#fcb856"></stop></lineargradient>
+
+<lineargradient id="wi_sun-semi" x1="30.9033" y1="18.7281" x2="30.9033" y2="48.2772" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd048"></stop><stop offset="1" stop-color="#fcb956"></stop></lineargradient><radialgradient id="wi_cloud_gradient" cx="217.6028" cy="139.908" r="19.6551" gradientTransform="matrix(-0.9799, 0.1996, -0.1996, -0.9799, 329.8802, 142.0496)" gradientUnits="userSpaceOnUse"><stop offset="0.0307" stop-color="#777ab4"></stop><stop offset="1" stop-color="#777ab4" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="wi_cloud_gradient-2" cx="27.5833" cy="51.4167" r="22.8835" gradientTransform="translate(82.5368 -13.6167) rotate(78.4878)" xlink:href="#wi_cloud_gradient"></radialgradient>
+<g transform="translate(0,9)"><g transform="translate(-15,-15)">
+	<g transform="translate(50,50)">
+		<circle class="wi_sun" cx="0" cy="0" r="16.9"></circle>
+		<g class="ww-animation-sun">
+			<g transform="rotate(0)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(45)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(90)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(135)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(180)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(225)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+				<g transform="rotate(270)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+			<g transform="rotate(315)">
+				<line class="ww-animation-sunshine wi_sunshine" stroke-linecap="round" stroke-width="5" transform="translate(0,24)" x1="0" x2="0" y1="0" y2="7"></line>
+			</g>
+		</g>
+	</g>
+</g>
+	<g class="ww-animation-hr-move">
+		<path class="wi_cloud" d="M42.2984,53.6806a14.3613,14.3613,0,1,0-13.327,19.5512l42.1491-.0041a14.479,14.479,0,0,0-.0687-28.9567,14.2687,14.2687,0,0,0-4.5761.7722,13.4788,13.4788,0,0,0,.2894-2.6478c0-8.3686-7.615-15.1526-17.0086-15.1526s-17.0086,6.784-17.0086,15.1526a13.5833,13.5833,0,0,0,.2692,2.6087"></path>
+		<path class="wi_cloud" d="M28.9717,75.2318a16.3446,16.3446,0,1,1-.05-32.689,16.6505,16.6505,0,0,1,1.8281.1c-.001-.0825-.002-.165-.002-.2476,0-9.458,8.5274-17.1523,19.0088-17.1523s19.0078,7.6943,19.0078,17.1523v.045a15.6472,15.6472,0,0,1,2.2872-.1695A16.4792,16.4792,0,0,1,71.12,75.2279Zm-.05-28.689a12.3447,12.3447,0,1,0,.05,24.689L71.12,71.2279a12.4794,12.4794,0,0,0-.0683-24.9571,12.3266,12.3266,0,0,0-3.9375.668l-3.2735,1.1025.6729-3.3881a11.452,11.452,0,0,0,.2509-2.2579c0-7.2524-6.7324-13.1523-15.0078-13.1523s-15.0088,5.9-15.0088,13.1523a10.4263,10.4263,0,0,0,.0752,1.2344,16.2968,16.2968,0,0,1,9.3379,9.3208,2,2,0,0,1-3.7246,1.46A12.3024,12.3024,0,0,0,28.9219,46.5428Z"></path>
+		<ellipse class="wi_cloud_gradient" cx="71.5205" cy="58.6433" rx="16.4336" ry="15.6777" transform="translate(12.5544 129.8979) rotate(-89.741)"></ellipse>
+		<ellipse class="wi_cloud" cx="49.7083" cy="44.3165" rx="19.0833" ry="18.4751"></ellipse>
+		<ellipse class="wi_cloud_gradient-2" cx="49.6032" cy="43.7126" rx="18.2528" ry="19.1329" transform="translate(-3.1296 83.5939) rotate(-78.4878)"></ellipse>
+		<circle class="wi_cloud" cx="29.0018" cy="58.8044" r="16.3878"></circle>
+	</g></g></svg> </div> <div class="temp"> <div class="day"> 25°C </div> <div class="night"> 16°C </div> </div> </div> </div> <div style="display:none">+18</div><div style="display:none">+17</div><div style="display:none">+16</div><div style="display:none">+15</div><div style="display:none">+14</div><div style="display:none">+16</div><div style="display:none">+17</div><div style="display:none">+19</div><div style="display:none">+21</div><div style="display:none">+23</div><div style="display:none">+25</div><div style="display:none">+26</div><div style="display:none">+26</div><div style="display:none">+27</div><div style="display:none">+27</div><div style="display:none">+28</div><div style="display:none">+28</div><div style="display:none">+26</div><div style="display:none">+25</div><div style="display:none">+23</div><div style="display:none">+21</div><div style="display:none">+20</div><div style="display:none">+18</div><div style="display:none">+17</div><div style="display:none">+17</div><div style="display:none">+16</div><div style="display:none">+15</div><div style="display:none">+15</div><div style="display:none">+14</div><div style="display:none">+15</div><div style="display:none">+17</div><div style="display:none">+18</div><div style="display:none">+19</div><div style="display:none">+20</div><div style="display:none">+21</div><div style="display:none">+22</div><div style="display:none">+22</div><div style="display:none">+22</div><div style="display:none">+23</div><div style="display:none">+23</div><div style="display:none">+23</div><div style="display:none">+22</div><div style="display:none">+21</div><div style="display:none">+20</div><div style="display:none">+19</div><div style="display:none">+19</div><div style="display:none">+19</div><div style="display:none">+18</div><div style="display:none">+19</div><div style="display:none">+18</div><div style="display:none">+16</div><div style="display:none">+17</div><div style="display:none">+15</div><div style="display:none">+17</div><div style="display:none">+19</div><div style="display:none">+20</div><div style="display:none">+21</div><div style="display:none">+22</div><div style="display:none">+23</div><div style="display:none">+24</div><div style="display:none">+24</div><div style="display:none">+23</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+25</div><div style="display:none">+23</div><div style="display:none">+22</div><div style="display:none">+21</div><div style="display:none">+21</div><div style="display:none">+21</div><div style="display:none">+21</div><div style="display:none">+19</div> </div> <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all; width: 1048px; height: 114px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all; width: 200%; height: 200%;"></div></div></div></div>  <div class="ww_source"> <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 111.577 111.577" xml:space="preserve"><path class="ww_infoicon" d="M78.962,99.536l-1.559,6.373c-4.677,1.846-8.413,3.251-11.195,4.217c-2.785,0.969-6.021,1.451-9.708,1.451
+		c-5.662,0-10.066-1.387-13.207-4.142c-3.141-2.766-4.712-6.271-4.712-10.523c0-1.646,0.114-3.339,0.351-5.064
+		c0.239-1.727,0.619-3.672,1.139-5.846l5.845-20.688c0.52-1.981,0.962-3.858,1.316-5.633c0.359-1.764,0.532-3.387,0.532-4.848
+		c0-2.642-0.547-4.49-1.636-5.529c-1.089-1.036-3.167-1.562-6.252-1.562c-1.511,0-3.064,0.242-4.647,0.71
+		c-1.59,0.47-2.949,0.924-4.09,1.346l1.563-6.378c3.829-1.559,7.489-2.894,10.99-4.002c3.501-1.111,6.809-1.667,9.938-1.667
+		c5.623,0,9.962,1.359,13.009,4.077c3.047,2.72,4.57,6.246,4.57,10.591c0,0.899-0.1,2.483-0.315,4.747
+		c-0.21,2.269-0.601,4.348-1.171,6.239l-5.82,20.605c-0.477,1.655-0.906,3.547-1.279,5.676c-0.385,2.115-0.569,3.731-0.569,4.815
+		c0,2.736,0.61,4.604,1.833,5.597c1.232,0.993,3.354,1.487,6.368,1.487c1.415,0,3.025-0.251,4.814-0.744
+		C76.854,100.348,78.155,99.915,78.962,99.536z M80.438,13.03c0,3.59-1.353,6.656-4.072,9.177c-2.712,2.53-5.98,3.796-9.803,3.796
+		c-3.835,0-7.111-1.266-9.854-3.796c-2.738-2.522-4.11-5.587-4.11-9.177c0-3.583,1.372-6.654,4.11-9.207
+		C59.447,1.274,62.729,0,66.563,0c3.822,0,7.091,1.277,9.803,3.823C79.087,6.376,80.438,9.448,80.438,13.03z"></path></svg> <div class="ww_info"> 
                                 More forecasts:
-                                <a href="https://oneweather.org/sydney/30_days/"
-                                id="ww_838e582e0098b_u" target="_blank">
+                                <a href="https://oneweather.org/sydney/30_days/" id="ww_838e582e0098b_u" target="_blank">
                                 Weather Sydney 30 days
                                 </a>
-                            </div>
+                             </div> </div></div>
                         </div>
 
-                        <script async src="https://app3.weatherwidget.org/js/?id=ww_838e582e0098b"></script>
+                        
 
 
 
@@ -1215,22 +1919,20 @@
                     </div>
                     <h2 style="color: var(--primary); text-align: center; margin-top: 2rem;">WELCOME TO QUT!</h2>
                     <div style=" margin: 0 auto; text-align: center;">
-                    <img src="https://quttestdataai102.blob.core.windows.net/sitecontent/qs-profile-resized.jpg"
-                    alt="QUT Campuses"
-                    style="border-radius: 8px; 
+                    <img src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/qs-profile-resized-3.webp" alt="QUT Campuses" style="border-radius: 8px; 
                     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
                     max-width: 100%; 
                     height: auto;">
                     </div>
 
-        </section>
+        </div></div></section>
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                <i class="fas fa-graduation-cap"></i>
+                <i class="fa-solid fa-graduation-cap"></i>
             </div>
 
             <div class="useful-links">
@@ -1238,12 +1940,11 @@
                 <ul>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-passport"></i></div>
-                        <a href="https://www.abf.gov.au/entering-leaving-australia/files/ipc-sample-english.pdf"
-                            target="_blank">Incoming Passenger Card</a>
+                        <a href="https://www.abf.gov.au/entering-leaving-australia/files/ipc-sample-english.pdf" target="_blank">Incoming Passenger Card</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-person-military-pointing"></i></div>
-                        <a href="https://www.agriculture.gov.au/biosecurity-trade/travelling/to-australia" target="_blank">BioSecurity & Customs
+                        <a href="https://www.agriculture.gov.au/biosecurity-trade/travelling/to-australia" target="_blank">BioSecurity &amp; Customs
                             Declaration</a>
                     </li>
                     <li>
@@ -1261,12 +1962,11 @@
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-building-user"></i></div>
-                        <a href="https://www.qut.edu.au/study/student-life/living-in-brisbane/accommodation-in-brisbane"
-                            target="_blank">Student Accommodation</a>
+                        <a href="https://www.qut.edu.au/study/student-life/living-in-brisbane/accommodation-in-brisbane" target="_blank">Student Accommodation</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
-                        <a href="https://www.rent.com.au" target="_blank">Rental Properties</a>
+                        <a href="https://www.rent.com.au/" target="_blank">Rental Properties</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-building-columns"></i></div>
@@ -1283,21 +1983,19 @@
                     </li>					
 					<li>						
                         <div class="link-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-                        <a href="https://www.yelp.com/search?find_desc=Grocery&find_loc=Brisbane+Queensland"
-                            target="_blank">Groceries</a>
+                        <a href="https://www.yelp.com/search?find_desc=Grocery&amp;find_loc=Brisbane+Queensland" target="_blank">Groceries</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-bag-shopping"></i></div>
-                        <a href="https://www.tripadvisor.com.au/Attractions-g255068-Activities-c26-t143-Brisbane_Brisbane_Region_Queensland.html"
-                            target="_blank">Shopping Malls</a>
+                        <a href="https://www.tripadvisor.com.au/Attractions-g255068-Activities-c26-t143-Brisbane_Brisbane_Region_Queensland.html" target="_blank">Shopping Malls</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-file-pen"></i></div>
-                        <a href="https://www.officeworks.com.au" target="_blank">Office/Stationery Supplies</a>
+                        <a href="https://www.officeworks.com.au/" target="_blank">Office/Stationery Supplies</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-laptop"></i></div>
-                        <a href="https://www.jbhifi.com.au" target="_blank">Tech Supplies</a>
+                        <a href="https://www.jbhifi.com.au/" target="_blank">Tech Supplies</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-calendar-days"></i></div>
@@ -1305,8 +2003,7 @@
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-utensils"></i></div>
-                        <a href="https://www.theurbanlist.com/brisbane/a-list/brisbanes-best-restaurants"
-                            target="_blank">Brisbane Best Restaurants</a>
+                        <a href="https://www.theurbanlist.com/brisbane/a-list/brisbanes-best-restaurants" target="_blank">Brisbane Best Restaurants</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-book"></i></div>
@@ -1318,8 +2015,7 @@
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-mountain-sun"></i></div>
-                        <a href="https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/malls-and-precincts/mt-coot-tha-precinct"
-                            target="_blank">Mt Coot-tha</a>
+                        <a href="https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/malls-and-precincts/mt-coot-tha-precinct" target="_blank">Mt Coot-tha</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-ship"></i></div>
@@ -1327,8 +2023,7 @@
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-umbrella-beach"></i></div>
-                        <a href="https://www.queensland.com/au/en/places-to-see/destinations/gold-coast"
-                            target="_blank">Gold Coast</a>
+                        <a href="https://www.queensland.com/au/en/places-to-see/destinations/gold-coast" target="_blank">Gold Coast</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-jet-fighter-up"></i></div>
@@ -1348,7 +2043,7 @@
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-flag-checkered"></i></div>
-                        <a href="https://www.qldraceways.com.au" target="_blank">Queensland Raceway</a>
+                        <a href="https://www.qldraceways.com.au/" target="_blank">Queensland Raceway</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-bridge"></i></div>
@@ -1356,17 +2051,15 @@
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-masks-theater"></i></div>
-                        <a href="https://www.qpac.com.au" target="_blank">Performing Arts</a>
+                        <a href="https://www.qpac.com.au/" target="_blank">Performing Arts</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-film"></i></div>
-                        <a href="https://www.timeout.com/brisbane/cinemas/the-best-cinemas-in-brisbane"
-                            target="_blank">Cinemas</a>
+                        <a href="https://www.timeout.com/brisbane/cinemas/the-best-cinemas-in-brisbane" target="_blank">Cinemas</a>
                     </li>
                     <li>
                         <div class="link-icon"><i class="fa-solid fa-cloud-moon-rain"></i></div>
-                        <a href="https://www.getready.qld.gov.au/get-prepared"
-                            target="_blank">Storm Readiness</a>
+                        <a href="https://www.getready.qld.gov.au/get-prepared" target="_blank">Storm Readiness</a>
                     </li>
 
                 </ul>
@@ -1385,32 +2078,25 @@
             }
 
             </style>
-            <video controls playsinline preload="metadata" poster="https://quttestdataai102.blob.core.windows.net/sitecontent/Brisbane_Skyline.png">
-             <source src="https://quttestdataai102.blob.core.windows.net/sitecontent/Brisbane.mp4" type="video/mp4">
+            <video controls="" playsinline="" preload="metadata" poster="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/Brisbane_Skyline.png">
+             <source src="https://raw.githubusercontent.com/HashimHilal-QUT/Intl_Student_Journey-QUT/main/site_assets/Brisbane.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
             <p class="copyright">
-                &copy; 2026 Hashim@QUT. This information is provided as a helpful resource and may be subject to change.
+                © 2026 Hashim@QUT. This information is provided as a helpful resource and may be subject to change.
                 Always verify official requirements with relevant authorities.
             </p>
         </div>
-        <style>
-            .freevisitorcounter a {
-                pointer-events: none;
-                cursor: default;
-                text-decoration: none;
-            }
-            </style>
+        
+        <a href="https://hits.sh/smbclouddrive.blob.core.windows.net/sitecontent/International-Student-Journey-at-QUT.html/"><img alt="Hits" src="https://hits.sh/smbclouddrive.blob.core.windows.net/sitecontent/International-Student-Journey-at-QUT.html.svg?label=Visitor%20%23&extraCount=500&color=007ec6"/></a>
             
-            <div class="freevisitorcounter">
-                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1497900/t/2"></script>
-            </div>
             
             
     </footer>
 
     <script>
+    document.addEventListener('DOMContentLoaded', function() {
         // Smooth scrolling for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1465,14 +2151,21 @@
         `;
         document.head.appendChild(style);
 
-        // Handle contact buttons
-        document.querySelectorAll('.author-contact').forEach(button => {
-            button.addEventListener('click', function (e) {
-                e.preventDefault();
-                alert("Boo!");
+        // Handle contact buttons — safely check element exists before adding listener
+        const emailBtn = document.querySelector('.contact-btn[href^="mailto"]');
+        if (emailBtn) {
+            emailBtn.addEventListener('click', function(e) {
+                console.log('Email contact clicked');
             });
-        });
-    </script>
-</body>
+        }
 
-</html>
+        const whatsappBtn = document.querySelector('.contact-btn[href*="whatsapp"]');
+        if (whatsappBtn) {
+            whatsappBtn.addEventListener('click', function(e) {
+                console.log('WhatsApp contact clicked');
+            });
+        }
+    }); // end DOMContentLoaded
+  
+    </script>
+
